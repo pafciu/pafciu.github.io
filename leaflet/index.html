@@ -12,8 +12,7 @@
   <script>
     var mymap = L.map('mapid').setView([53.12270, 18.00645], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 20
+      attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mymap);
     fetch('features.json').then((resp) => resp.json()).then(function(data) { L.geoJSON(data).addTo(mymap); });
   </script>
